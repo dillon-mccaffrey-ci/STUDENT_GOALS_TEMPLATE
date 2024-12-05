@@ -8,6 +8,12 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Home</h1>
-    <p>Welcome to the home page!</p>
+<section class="home-section container-col">
+    <h2>Select Your Module</h2>
+    <a href="{% url 'module' number='one' %}" class="btn">HTML / CSS</a>
+    <a href="{% url 'module' number='two' %}" class="btn">Javascript</a>
+    <a href="{% url 'module' number='three' %}" class="btn">Django</a>
+    <a href="{% url 'module' number='four' %}" class="btn">Final Hackathon</a>
+    <a href="{% url 'responses' %}" class="btn">View Responses</a>
+</section>
 {% endblock %}
