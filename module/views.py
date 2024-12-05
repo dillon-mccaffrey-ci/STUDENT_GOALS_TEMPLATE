@@ -42,7 +42,7 @@ def module(request, number):
 
             # Generate a prompt using the data
             prompt = (
-                "I will give you 3 academic (curriculum related) goals, 3 personal goals (behaviours, learning skills), 3 employment goals (communication, teamwork, collaboration) related to learning " + module_prompt_text + " in a web development bootcamp. I want you to return to me an expanded answer to all of these:\n\n"
+                "I will give you 3 academic (curriculum related) goals, 3 personal goals (behaviours, learning skills), 3 employment goals (communication, teamwork, collaboration) related to " + module_prompt_text + "module in a web development bootcamp. I want you to return to me an expanded answer to all of these related to the module:\n\n"
                 "Academic Goals:\n" + "\n".join(academic_goals) + "\n"
                 "Personal Goals:\n" + "\n".join(personal_goals) + "\n"
                 "Employment Goals:\n" + "\n".join(employment_goals) + "\n"
